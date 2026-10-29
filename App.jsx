@@ -100,7 +100,9 @@ export default function App() {
         <section id="about">
           <Title k="About">Meet the Creator Behind AEP CineMedia</Title>
           <div className="card about">
-            <div className="photo" aria-label="Photo placeholder">SM</div>
+            <div className="photo">
+  <img src={`${import.meta.env.BASE_URL}images/Logo.webp`} alt="AEP CineMedia Logo" />
+</div>
             <div>
               <h3>Suvro Mahato</h3><p className="mut">Founder, Developer &amp; Video Editor</p>
               <p>A passionate video editor and digital creator focused on cinematic storytelling, creative visuals, and engaging content. AEP CineMedia brings together editing services and promotional opportunities in one creative space.</p>
