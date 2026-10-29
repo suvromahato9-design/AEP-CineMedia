@@ -60,6 +60,13 @@ button.tap{text-align:left;font:inherit;cursor:pointer;display:flex;flex-directi
 .about{display:flex;flex-direction:column;gap:18px}
 @media(min-width:620px){.about{flex-direction:row;align-items:center}}
 .photo{width:120px;height:120px;border-radius:50%;background:var(--g);display:grid;place-items:center;font-size:2rem;font-weight:800;flex:none}
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:50%;
+  display:block;
+}
 .steps{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .steps li{display:flex;gap:14px;align-items:flex-start}
 .steps .num{margin:0;flex:none}
