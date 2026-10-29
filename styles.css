@@ -46,6 +46,14 @@ button.tap{text-align:left;font:inherit;cursor:pointer;display:flex;flex-directi
 .sub{margin-top:28px}
 .reel{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;text-decoration:none;min-height:calc(var(--h) * 1px);background:linear-gradient(160deg,rgba(139,92,246,.35),rgba(59,130,246,.12) 60%,rgba(255,255,255,.03))}
 .reel:hover{transform:translateY(-4px)}
+.reel img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+  border-radius:10px;
+  margin-bottom:12px;
+}
 .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--g);font-weight:700;margin-bottom:auto}
 .watch{color:#c4b5fd;font-size:.9rem}
 .promo{margin-top:36px;padding:32px 18px;border-radius:20px;background:linear-gradient(135deg,rgba(139,92,246,.18),rgba(59,130,246,.12));border:1px solid var(--line)}
