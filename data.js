@@ -28,21 +28,24 @@ export const promos = [
   { title: 'Other Promotional Work', price: '₹499 to ₹999', cta: 'Get a Custom Quote' },
 ]
 
-// Rename titles freely. Each url opens the original Reel on Instagram.
+
+
+const imageBase = `${import.meta.env.BASE_URL}images/`
+
 export const reels = [
-  'https://www.instagram.com/reel/DWVz9jgAmMC/?xtok=MWRvaHNqZ2UyNDVzNA==',
-  'https://www.instagram.com/reel/DYZofCHB0Sz/?cplk=YzA4dmF2ems2dGVx',
-  'https://www.instagram.com/reel/DVvu-o7E0hV/?obrf=MXU5a2d6dWFpcTQ3bQ==',
-  'https://www.instagram.com/reel/DVql_wiE-3Y/?mdxt=ZDNrNDFwdXdzaXp4',
-  'https://www.instagram.com/reel/DN3JGXIZnbY/?xtok=emVoYTFvY3hneXpw',
-  'https://www.instagram.com/reel/DLo9OsoT2hm/?vrfl=Yzl3OHM2ZWpybmx2',
-  'https://www.instagram.com/reel/DfEtO6EiJcL/?vrfl=MTRrNjY2cWVicjA4dQ==',
-  'https://www.instagram.com/reel/DfEDu-ST9GE/?srtk=dHQzb3RsZG81NGFw',
-  'https://www.instagram.com/reel/De_4tBeCpIj/?srtk=OGcyaG02cXU5YTlt',
-  'https://www.instagram.com/reel/DcbK_1qCtwd/?obrf=MXV5bXQ5cm42b3I5NQ==',
-  'https://www.instagram.com/reel/Dc5dP_yCOvv/?psln=MXZ5M3BqZWU0Nzl2',
-  'https://www.instagram.com/reel/DLsJtH2zoOI/?xtok=YTYzdnE2NXk1ZDEw',
-].map((url, i) => ({ title: `Edit ${String(i + 1).padStart(2, '0')}`, url }))
+  { title: 'Jannat 2', url: 'https://www.instagram.com/reel/DWVz9jgAmMC/', image: `${imageBase}01_JANNAT_2.jpg` },
+  { title: 'Gushtakh Ishq', url: 'https://www.instagram.com/reel/DYZofCHB0Sz/', image: `${imageBase}02_GUSHTAKH_ISHQ.jpg` },
+  { title: 'Hate Story 2', url: 'https://www.instagram.com/reel/DVvu-o7E0hV/', image: `${imageBase}03_HATE_STORY_2.jpg` },
+  { title: 'Khiladi 786', url: 'https://www.instagram.com/reel/DVql_wiE-3Y/', image: `${imageBase}04_KHILADI_786.jpg` },
+  { title: 'Premanand Maharaj Ji', url: 'https://www.instagram.com/reel/DN3JGXIZnbY/', image: `${imageBase}05_PREMANAND_MAHARAJ_JI.jpg` },
+  { title: 'MS Dhoni', url: 'https://www.instagram.com/reel/DLo9OsoT2hm/', image: `${imageBase}06_MS_DHONI.jpg` },
+  { title: 'Dear Comrade', url: 'https://www.instagram.com/reel/DfEtO6EiJcL/', image: `${imageBase}07_DEAR_COMRADE.jpg` },
+  { title: 'Sapta Sagaradaache Ello — Side B', url: 'https://www.instagram.com/reel/DfEDu-ST9GE/', image: `${imageBase}08_SAPTA_SAGARADAACHE_ELLO_SIDE_B.jpg` },
+  { title: 'Malang', url: 'https://www.instagram.com/reel/De_4tBeCpIj/', image: `${imageBase}09_MALANG.jpg` },
+  { title: 'Main Rahoon Ya Na Rahoon', url: 'https://www.instagram.com/reel/DcbK_1qCtwd/', image: `${imageBase}10_MAIN_RAHOON_YA_NA_RAHOON.jpg` },
+  { title: 'Family Kirana Store', url: 'https://www.instagram.com/reel/Dc5dP_yCOvv/', image: `${imageBase}11_FAMILY_KIRANA_STORE.jpg` },
+  { title: 'CSK × MS Dhoni', url: 'https://www.instagram.com/reel/DLsJtH2zoOI/', image: `${imageBase}12_CSK_MS_DHONI.jpg` },
+]
 
 export const why = [
   ['Creative storytelling', 'Edits built around pacing, mood and a clear story.'],
