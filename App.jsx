@@ -76,6 +76,7 @@ export default function App() {
           <div className="grid small">
             {reels.map((r, i) => (
               <a className="card reel" key={r.url} href={r.url} {...ext} style={{ '--h': 250 + i * 8 }}>
+                <img src={r.image} alt={r.title} loading="lazy" />
                 <span className="num">{String(i + 1).padStart(2, '0')}</span>
                 <b>{r.title}</b><span className="watch">Watch Edit on Instagram</span>
               </a>
