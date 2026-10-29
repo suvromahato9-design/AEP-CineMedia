@@ -9,7 +9,7 @@ export const SITE = {
 export const mainServices = [
   { title: 'Instagram Reels Editing', note: '15 to 30 seconds', was: 399, price: 299, cta: 'Order Reel Edit' },
   { title: 'YouTube / Facebook Video Editing', note: 'Up to 3 minutes', was: 899, price: 699, cta: 'Order Video Edit' },
-  { title: , note: 'Ad edits', was: 1299, price: 999, cta: 'Create My Ad' },
+  { title: 'Professional Advertisement Editing', note: 'Ad edits', was: 1299, price: 999, cta: 'Create My Ad' },
 ]
 
 export const moreServices = [
