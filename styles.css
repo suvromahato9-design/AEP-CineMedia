@@ -190,3 +190,37 @@ footer a{margin:0 8px}
     animation: none;
   }
 }
+/* ===== AEP PREMIUM PORTFOLIO EFFECTS ===== */
+
+.reel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.4s ease,
+              box-shadow 0.4s ease,
+              border-color 0.4s ease;
+}
+
+.reel img {
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1),
+              filter 0.5s ease;
+}
+
+.reel:hover {
+  transform: translateY(-8px);
+  border-color: #d9a441;
+  box-shadow: 0 15px 40px rgba(0,0,0,.4),
+              0 0 25px rgba(217,164,65,.18);
+}
+
+.reel:hover img {
+  transform: scale(1.045);
+  filter: brightness(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reel,
+  .reel img {
+    transition: none;
+  }
+}
