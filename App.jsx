@@ -17,7 +17,9 @@ export default function App() {
   const pick = title => { setSvc(title); location.hash = 'contact' }
   const set = k => e => setF({ ...f, [k]: e.target.value })
   useEffect(() => {
-  const cards = document.querySelectorAll('.reel')
+const cards = document.querySelectorAll(
+  'section, section .card, section .steps li, section details'
+)
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
