@@ -131,8 +131,57 @@ const cards = document.querySelectorAll(
           </div>
         </section>
 
-        <section id="about">
-          <Title k="About">Meet the Creator Behind AEP CineMedia</Title>
+        <section id="academy">
+  <Title k="Academy">AEP Editing Academy</Title>
+  <p className="mut">
+    Learn Photo & Video Editing from Basic to Advanced.
+  </p>
+
+  <h3>🎬 Video Editing Courses</h3>
+  <div className="grid small">
+    <article className="card">
+      <h3>Mobile Editing</h3>
+      <p>CapCut • Alight Motion • VN</p>
+      <p className="mut">Basic to Advanced</p>
+      <h2>₹399–₹699 <small>/ month</small></h2>
+    </article>
+
+    <article className="card">
+      <h3>After Effects</h3>
+      <p>Advanced PC Video Editing</p>
+      <h2>₹899–₹1,099 <small>/ month</small></h2>
+    </article>
+
+    <article className="card">
+      <h3>DaVinci Resolve</h3>
+      <p>Professional Video Editing</p>
+      <h2>₹999–₹1,299 <small>/ month</small></h2>
+    </article>
+
+    <article className="card">
+      <h3>Premiere Pro</h3>
+      <p>Professional Video Editing</p>
+      <h2>₹899–₹1,099 <small>/ month</small></h2>
+    </article>
+  </div>
+
+  <h3>📸 Photo Editing Courses</h3>
+  <div className="grid small">
+    <article className="card">
+      <h3>Mobile Photo Editing</h3>
+      <p>All Mobile Apps + AI Prompts</p>
+      <h2>₹599 <small>/ month</small></h2>
+    </article>
+
+    <article className="card">
+      <h3>PC Photo Editing</h3>
+      <p>All Software + AI Tools</p>
+      <h2>₹999 <small>/ month</small></h2>
+    </article>
+  </div>
+</section>
+          <section id="about">
+  <Title k="About">Meet the Creator Behind AEP CineMedia</Title>
           <div className="card about">
             <div className="photo">
   <img src={`${import.meta.env.BASE_URL}images/Logo.webp`} alt="AEP CineMedia Logo" />
