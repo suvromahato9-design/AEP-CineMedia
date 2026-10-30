@@ -82,7 +82,13 @@ const cards = document.querySelectorAll(
 
       <main>
         <section id="services">
-          <Title k="Services">Editing Services and Pricing</Title>
+          <details className="expand-section">
+  <summary>
+    <span className="expand-label">SERVICES</span>
+    <strong>Editing Services and Pricing</strong>
+    <span className="expand-icon">+</span>
+  </summary>
+  <div className="expand-content">
           <div className="grid">
             {mainServices.map(s => (
               <article className="card" key={s.title}>
@@ -104,6 +110,8 @@ const cards = document.querySelectorAll(
           </div>
           <p className="note">Additional prices are suggested starting prices, not verified market rates. Final pricing may vary depending on duration, complexity, revisions, and project requirements.</p>
         </section>
+            </div>
+</details>
 
         <section id="portfolio">
           <Title k="Portfolio">My Editing Portfolio</Title>
