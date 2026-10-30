@@ -285,3 +285,39 @@ footer a{margin:0 8px}
     transition: none;
   }
 }
+/* AEP UNIVERSAL CINEMATIC SCROLL */
+
+section,
+section .card,
+section .steps li,
+section details {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(1px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.3s ease;
+}
+
+section.is-visible,
+section .card.is-visible,
+section .steps li.is-visible,
+section details.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section,
+  section .card,
+  section .steps li,
+  section details {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
