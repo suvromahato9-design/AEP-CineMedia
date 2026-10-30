@@ -390,5 +390,5 @@ html {
 }
 /* AEP HERO ENTRANCE ANIMATION */
 .hero {
-  animation: heroFadeUp 1.2s ease-out both;
+  animation: heroFadeUp 1.2s ease-out 3.6s both;
 }
