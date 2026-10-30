@@ -253,12 +253,12 @@ footer a{margin:0 8px}
 
 .reel {
   opacity: 0;
-  transform: translateY(55px) scale(0.96);
-  filter: blur(8px);
+  transform: translateY(45px) scale(0.97);
+  filter: blur(3px);
   transition:
-    opacity 0.9s ease,
-    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    filter 0.9s ease;
+    opacity 0.45s ease,
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.35s ease;
 }
 
 .reel.is-visible {
@@ -271,11 +271,11 @@ footer a{margin:0 8px}
   transform: translateY(-8px);
 }
 
-.reel:nth-child(2) { transition-delay: 0.08s; }
-.reel:nth-child(3) { transition-delay: 0.16s; }
-.reel:nth-child(4) { transition-delay: 0.24s; }
-.reel:nth-child(5) { transition-delay: 0.32s; }
-.reel:nth-child(6) { transition-delay: 0.40s; }
+.reel:nth-child(2) { transition-delay: 0.05s; }
+.reel:nth-child(3) { transition-delay: 0.10s; }
+.reel:nth-child(4) { transition-delay: 0.15s; }
+.reel:nth-child(5) { transition-delay: 0.20s; }
+.reel:nth-child(6) { transition-delay: 0.25s; }
 
 @media (prefers-reduced-motion: reduce) {
   .reel {
