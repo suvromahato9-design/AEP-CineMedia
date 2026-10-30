@@ -114,79 +114,115 @@ const cards = document.querySelectorAll(
 </section>
 
         <section id="portfolio">
-          <Title k="Portfolio">My Editing Portfolio</Title>
-          <div className="grid small">
-            {reels.map((r, i) => (
-              <a className="card reel" key={r.url} href={r.url} {...ext} style={{ '--h': 250 + i * 8 }}>
-                <img src={r.image} alt={r.title} loading="lazy" />
-                <span className="num">{String(i + 1).padStart(2, '0')}</span>
-                <b>{r.title}</b><span className="watch">Watch Edit on Instagram</span>
-              </a>
-            ))}
-          </div>
-        </section>
+  <details className="expand-section">
+    <summary>
+      <span className="expand-label">OUR WORK</span>
+      <strong>My Editing Portfolio</strong>
+      <span className="expand-icon">+</span>
+    </summary>
+
+    <div className="expand-content">
+      <div className="grid small">
+        {reels.map((r, i) => (
+          <a className="card reel" key={r.url} href={r.url} {...ext} style={{ '--h': 250 + i * 8 }}>
+            <img src={r.image} alt={r.title} loading="lazy" />
+            <span className="num">{String(i + 1).padStart(2, '0')}</span>
+            <b>{r.title}</b>
+            <span className="watch">Watch Edit on Instagram</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </details>
+</section>
 
         <section id="promotions" className="promo">
-          <Title k="Promotions">Promotions That Get Your Content Noticed</Title>
-          <p className="mut">Scope, deliverables, availability and final pricing are confirmed with you before any project begins. We do not guarantee views, reach, followers, sales or viral results.</p>
-          <div className="grid">
-            {promos.map(s => (
-              <article className="card" key={s.title}>
-                <h3>{s.title}</h3><p className="price">{s.price}</p>
-                <button className="btn" onClick={() => pick(s.title)}>{s.cta}</button>
-              </article>
-            ))}
-          </div>
-        </section>
+  <details className="expand-section">
+    <summary>
+      <span className="expand-label">PROMOTIONS</span>
+      <strong>Promotions That Get Your Content Noticed</strong>
+      <span className="expand-icon">+</span>
+    </summary>
+
+    <div className="expand-content">
+      <p className="mut">
+        Scope, deliverables, availability and final pricing are confirmed
+        with you before any project begins. We do not guarantee views,
+        reach, followers, sales or viral results.
+      </p>
+
+      <div className="grid">
+        {promos.map(s => (
+          <article className="card" key={s.title}>
+            <h3>{s.title}</h3>
+            <p className="price">{s.price}</p>
+            <button className="btn" onClick={() => pick(s.title)}>
+              {s.cta}
+            </button>
+          </article>
+        ))}
+      </div>
+    </div>
+  </details>
+</section>
 
         <section id="academy">
-  <Title k="Academy">AEP Editing Academy</Title>
-  <p className="mut">
-    Learn Photo & Video Editing from Basic to Advanced.
-  </p>
+  <details className="expand-section">
+    <summary>
+      <span className="expand-label">ACADEMY</span>
+      <strong>AEP Editing Academy</strong>
+      <span className="expand-icon">+</span>
+    </summary>
 
-  <h3>🎬 Video Editing Courses</h3>
-  <div className="grid small">
-    <article className="card">
-      <h3>Mobile Editing</h3>
-      <p>CapCut • Alight Motion • VN</p>
-      <p className="mut">Basic to Advanced</p>
-      <h2>₹399–₹699 <small>/ month</small></h2>
-    </article>
+    <div className="expand-content">
+      <p className="mut">
+        Learn Photo & Video Editing from Basic to Advanced.
+      </p>
 
-    <article className="card">
-      <h3>After Effects</h3>
-      <p>Advanced PC Video Editing</p>
-      <h2>₹899–₹1,099 <small>/ month</small></h2>
-    </article>
+      <h3>🎬 Video Editing Courses</h3>
+      <div className="grid small">
+        <article className="card">
+          <h3>Mobile Editing</h3>
+          <p>CapCut • Alight Motion • VN</p>
+          <p className="mut">Basic to Advanced</p>
+          <h2>₹399–₹699 <small>/ month</small></h2>
+        </article>
 
-    <article className="card">
-      <h3>DaVinci Resolve</h3>
-      <p>Professional Video Editing</p>
-      <h2>₹999–₹1,299 <small>/ month</small></h2>
-    </article>
+        <article className="card">
+          <h3>After Effects</h3>
+          <p>Advanced PC Video Editing</p>
+          <h2>₹899–₹1,099 <small>/ month</small></h2>
+        </article>
 
-    <article className="card">
-      <h3>Premiere Pro</h3>
-      <p>Professional Video Editing</p>
-      <h2>₹899–₹1,099 <small>/ month</small></h2>
-    </article>
-  </div>
+        <article className="card">
+          <h3>DaVinci Resolve</h3>
+          <p>Professional Video Editing</p>
+          <h2>₹999–₹1,299 <small>/ month</small></h2>
+        </article>
 
-  <h3>📸 Photo Editing Courses</h3>
-  <div className="grid small">
-    <article className="card">
-      <h3>Mobile Photo Editing</h3>
-      <p>All Mobile Apps + AI Prompts</p>
-      <h2>₹599 <small>/ month</small></h2>
-    </article>
+        <article className="card">
+          <h3>Premiere Pro</h3>
+          <p>Professional Video Editing</p>
+          <h2>₹899–₹1,099 <small>/ month</small></h2>
+        </article>
+      </div>
 
-    <article className="card">
-      <h3>PC Photo Editing</h3>
-      <p>All Software + AI Tools</p>
-      <h2>₹999 <small>/ month</small></h2>
-    </article>
-  </div>
+      <h3>📸 Photo Editing Courses</h3>
+      <div className="grid small">
+        <article className="card">
+          <h3>Mobile Photo Editing</h3>
+          <p>All Mobile Apps + AI Prompts</p>
+          <h2>₹599 <small>/ month</small></h2>
+        </article>
+
+        <article className="card">
+          <h3>PC Photo Editing</h3>
+          <p>All Software + AI Tools</p>
+          <h2>₹999 <small>/ month</small></h2>
+        </article>
+      </div>
+    </div>
+  </details>
 </section>
           <section id="about">
   <Title k="About">Meet the Creator Behind AEP CineMedia</Title>
