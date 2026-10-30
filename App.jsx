@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { SITE, mainServices, moreServices, promos, reels, why, steps, faqs } from './data.js'
 
 const nav = [['services', 'Services'], ['portfolio', 'Portfolio'], ['promotions', 'Promotions'], ['about', 'About'], ['contact', 'Contact']]
@@ -16,6 +16,24 @@ export default function App() {
   const [f, setF] = useState({ name: '', desc: '', deadline: '', budget: '' })
   const pick = title => { setSvc(title); location.hash = 'contact' }
   const set = k => e => setF({ ...f, [k]: e.target.value })
+  useEffect(() => {
+  const cards = document.querySelectorAll('.reel')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible')
+        observer.unobserve(entry.target)
+      }
+    })
+  }, {
+    threshold: 0.15
+  })
+
+  cards.forEach(card => observer.observe(card))
+
+  return () => observer.disconnect()
+}, [])
   const listed = catalog.find(s => s.title === svc) || catalog[0]
   const body = [
     `Service: ${svc}`,
