@@ -30,9 +30,8 @@ const cards = document.querySelectorAll(
       }
     })
   }, {
-    rootMargin: '0px 0px 150px 0px',
-threshold: 0.05
-  })
+  threshold: 0.15
+})
 
   cards.forEach(card => observer.observe(card))
 
