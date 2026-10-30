@@ -388,3 +388,7 @@ html {
     animation: none;
   }
 }
+/* AEP HERO ENTRANCE ANIMATION */
+.hero {
+  animation: heroFadeUp 1.2s ease-out both;
+}
