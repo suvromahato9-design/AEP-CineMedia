@@ -249,3 +249,39 @@ footer a{margin:0 8px}
     transform: scale(1.025);
   }
 }
+/* AEP CINEMATIC SCROLL REVEAL */
+
+.reel {
+  opacity: 0;
+  transform: translateY(55px) scale(0.96);
+  filter: blur(8px);
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.9s ease;
+}
+
+.reel.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.reel.is-visible:hover {
+  transform: translateY(-8px);
+}
+
+.reel:nth-child(2) { transition-delay: 0.08s; }
+.reel:nth-child(3) { transition-delay: 0.16s; }
+.reel:nth-child(4) { transition-delay: 0.24s; }
+.reel:nth-child(5) { transition-delay: 0.32s; }
+.reel:nth-child(6) { transition-delay: 0.40s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reel {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
