@@ -224,3 +224,28 @@ footer a{margin:0 8px}
     transition: none;
   }
 }
+/* ===== AEP MOBILE PORTFOLIO UPGRADE ===== */
+
+@media (hover: none) and (pointer: coarse) {
+
+  .reel {
+    border: 1px solid rgba(217, 164, 65, 0.55);
+    box-shadow:
+      0 8px 28px rgba(0, 0, 0, 0.35),
+      0 0 18px rgba(217, 164, 65, 0.12);
+  }
+
+  .reel img {
+    filter: saturate(1.08) contrast(1.04);
+  }
+
+  .reel:active {
+    transform: scale(0.985);
+    border-color: #e5b653;
+    box-shadow: 0 0 25px rgba(217, 164, 65, 0.3);
+  }
+
+  .reel:active img {
+    transform: scale(1.025);
+  }
+}
