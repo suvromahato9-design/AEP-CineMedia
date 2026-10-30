@@ -30,6 +30,19 @@ export default function App() {
 
   return (
     <div id="top">
+      <div className="cinematic-loader" aria-hidden="true">
+  <div className="loader-content">
+    <img
+      src={`${import.meta.env.BASE_URL}images/Logo.webp`}
+      alt=""
+    />
+    <h2>AEP CINEMEDIA</h2>
+    <div className="loader-line">
+      <span></span>
+    </div>
+    <p>CREATING YOUR VISUAL EXPERIENCE</p>
+  </div>
+</div>
       <header className="bar">
         <a className="logo" href="#top">AEP CineMedia</a>
         <nav className={open ? 'links open' : 'links'}>
