@@ -74,10 +74,10 @@ const cards = document.querySelectorAll(
 
       <section className="hero">
         <div className="orb o1" /><div className="orb o2" />
-        <p className="eyebrow">Video editing and creative promotion</p>
-        <h1>Your Vision. Our Creativity. <em>Cinematic Results.</em></h1>
-        <p className="lead">Premium video editing, creative production and promotional campaigns designed to make your content stand out.</p>
-        <div className="row"><a className="btn" href="#portfolio">Explore Our Work</a><a className="btn ghost" href="#contact">Hire Me</a></div>
+        <p className="eyebrow hero-eyebrow">Video editing and creative promotion</p>
+        <h1 className="hero-title">Your Vision. Our Creativity. <em>Cinematic Results.</em></h1>
+        <p className="lead hero-lead">Premium video editing, creative production and promotional campaigns designed to make your content stand out.</p>
+        <div className="row hero-actions"><a className="btn" href="#portfolio">Explore Our Work</a><a className="btn ghost" href="#contact">Hire Me</a></div>
       </section>
 
       <main>
