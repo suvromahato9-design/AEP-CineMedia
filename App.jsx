@@ -109,9 +109,9 @@ const cards = document.querySelectorAll(
             ))}
           </div>
           <p className="note">Additional prices are suggested starting prices, not verified market rates. Final pricing may vary depending on duration, complexity, revisions, and project requirements.</p>
-        </section>
-            </div>
+        </div>
 </details>
+</section>
 
         <section id="portfolio">
           <Title k="Portfolio">My Editing Portfolio</Title>
