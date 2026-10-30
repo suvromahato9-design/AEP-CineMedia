@@ -351,3 +351,40 @@ html {
   transform: scale(0.97);
   opacity: 0.85;
 }
+/* AEP PREMIUM HERO ANIMATION */
+
+.hero-eyebrow {
+  animation: heroFadeUp 0.7s ease-out both;
+}
+
+.hero-title {
+  animation: heroFadeUp 0.85s ease-out 0.12s both;
+}
+
+.hero-lead {
+  animation: heroFadeUp 0.85s ease-out 0.24s both;
+}
+
+.hero-actions {
+  animation: heroFadeUp 0.85s ease-out 0.36s both;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-eyebrow,
+  .hero-title,
+  .hero-lead,
+  .hero-actions {
+    animation: none;
+  }
+}
