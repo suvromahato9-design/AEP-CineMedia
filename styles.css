@@ -79,3 +79,114 @@ details.card{margin-bottom:10px}
 summary{cursor:pointer;font-weight:600}
 footer{text-align:center;padding:40px 18px;margin-top:40px;border-top:1px solid var(--line);color:var(--mut)}
 footer a{margin:0 8px}
+
+/* ===== AEP CINEMATIC LOADER ===== */
+
+.cinematic-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  background: #050507;
+  animation: loaderFade 0.8s ease 2.8s forwards;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  animation: loaderRise 1s ease both;
+}
+
+.loader-content img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 35px rgba(255, 190, 40, 0.4);
+  animation: logoGlow 1.8s ease-in-out infinite alternate;
+}
+
+.loader-content h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.22em;
+  background: linear-gradient(90deg, #fff0a0, #d99b25, #fff0a0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.loader-line {
+  width: 220px;
+  height: 3px;
+  background: #29231a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader-line span {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #d99b25, #fff0a0);
+  animation: loaderProgress 2.5s ease-in-out forwards;
+}
+
+.loader-content p {
+  color: #aaa;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+@keyframes loaderFade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@keyframes loaderRise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoGlow {
+  from {
+    box-shadow: 0 0 15px rgba(255, 190, 40, 0.2);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(255, 190, 40, 0.65);
+  }
+}
+
+@keyframes loaderProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cinematic-loader {
+    animation-duration: 0.2s;
+    animation-delay: 0.8s;
+  }
+
+  .loader-content,
+  .loader-content img,
+  .loader-line span {
+    animation: none;
+  }
+}
