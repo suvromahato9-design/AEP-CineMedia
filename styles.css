@@ -287,7 +287,6 @@ footer a{margin:0 8px}
 }
 /* AEP UNIVERSAL CINEMATIC SCROLL */
 
-section,
 section .card,
 section .steps li,
 section details {
@@ -301,7 +300,6 @@ section details {
     filter 0.3s ease;
 }
 
-section.is-visible,
 section .card.is-visible,
 section .steps li.is-visible,
 section details.is-visible {
@@ -309,12 +307,10 @@ section details.is-visible {
   transform: translateY(0);
   filter: blur(0);
 }
-
 @media (prefers-reduced-motion: reduce) {
-  section,
   section .card,
-  section .steps li,
-  section details {
+section .steps li,
+section details {
     opacity: 1;
     transform: none;
     filter: none;
