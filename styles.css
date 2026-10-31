@@ -79,6 +79,17 @@ details.card{margin-bottom:10px}
 summary{cursor:pointer;font-weight:600}
 footer{text-align:center;padding:40px 18px;margin-top:40px;border-top:1px solid var(--line);color:var(--mut)}
 footer a{margin:0 8px}
+/* FIX: Keep all content visible while scrolling */
+section,
+section .card,
+section .reel,
+section .steps li,
+section details {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  filter: none;
+}
 
 /* ===== AEP CINEMATIC LOADER ===== */
 
